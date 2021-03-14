@@ -42,4 +42,4 @@ THEN I can save my initials and my score
 
 Final result of webpage:
 
-![Final result of webpage](./assets/images/PasswordGenerator.png)
+![Final result of webpage](.assets/images/screencapture_Javascript_Quiz.png)
