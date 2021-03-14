@@ -5,7 +5,6 @@ const exit_btn = $(".buttons .quit");
 const continue_btn = $(".buttons .restart");
 const quiz_box = $(".quiz_box");
 const result_box = $(".result_box");
-// const option_list = $(".option_list");
 const option_list = document.querySelector(".option_list");
 const time_line = $("header .time_line");
 const timeText = $(".timer .time_left_txt");
@@ -23,12 +22,12 @@ $(exit_btn).click(function () {
   $(info_box).removeClass("activeInfo"); //show info box
 });
 
-// if exitQuiz button clicked
+// reload page
 $(quit_quiz).click(function () {
   location.reload();
 });
 
-// if exitQuiz button clicked
+// restart quiz
 $(restart_quiz).click(function () {
   $(result_box).removeClass("activeResult");
   timeValue = 60;
@@ -49,7 +48,6 @@ $(continue_btn).click(function () {
   showQuestions(0); //calling showQestions function
   questionCounter(1); //passing 1 parameter to queCounter
   startTimer(60); //calling startTimer function
-  //   startTimerLine(0); //calling startTimerLine function
 });
 
 let timeValue = 60;
