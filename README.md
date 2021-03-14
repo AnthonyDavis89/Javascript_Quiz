@@ -3,7 +3,7 @@
 ## Installation
 
 Link to working site:
-< https://anthonydavis89.github.io/Javascript_Quiz/>
+<https://anthonydavis89.github.io/Javascript_Quiz/>
 
 ## Repository
 
