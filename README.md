@@ -42,4 +42,4 @@ THEN I can save my initials and my score
 
 Final result of webpage:
 
-![Final result of webpage](.assets/images/screencapture_Javascript_Quiz.png)
+![Final result of webpage](assets/images/screencapture-127-0-0-1-5501-index-html-2021-07-10-21_33_58.png)
