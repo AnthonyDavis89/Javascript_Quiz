@@ -1,5 +1,4 @@
-/* importing google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -37,15 +36,25 @@ body {
 }
 
 .start_btn button {
-  font-size: 25px;
-  font-weight: 500;
+}
+
+.buttons button.restart {
+  color: #fff;
+  background: #007bff;
+}
+
+.buttons button.restart:hover {
+  background: #0263ca;
+}
+
+.buttons button.quit {
   color: #007bff;
-  padding: 15px 30px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
   background: #fff;
-  cursor: pointer;
+}
+
+.buttons button.quit:hover {
+  color: #fff;
+  background: #007bff;
 }
 
 .info_box {
@@ -53,33 +62,20 @@ body {
   background: #fff;
   border-radius: 5px;
   transform: translate(-50%, -50%) scale(0.9);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
+
 }
 
-.info_box .info-title {
-  height: 60px;
-  width: 100%;
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
-  border-radius: 5px 5px 0 0;
-  font-size: 20px;
-  font-weight: 600;
-}
 
-.info_box .info-list {
+.info_box {
   padding: 15px 30px;
 }
 
-.info_box .info-list .info {
+.info_box .info {
   margin: 5px 0;
   font-size: 17px;
 }
 
-.info_box .info-list .info span {
+.info_box .info span {
   font-weight: 600;
   color: #007bff;
 }
@@ -92,23 +88,10 @@ body {
   border-top: 1px solid lightgrey;
 }
 
-.info_box .buttons button {
-  margin: 0 5px;
-  height: 40px;
-  width: 100px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #007bff;
-  transition: all 0.3s ease;
-}
 
 .quiz_box {
   width: 550px;
-  background: #fff;
+  background: yellow;
   border-radius: 5px;
   transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
@@ -121,7 +104,7 @@ body {
   z-index: 2;
   height: 70px;
   padding: 0 30px;
-  background: #fff;
+  background: red;
   border-radius: 5px 5px 0 0;
   display: flex;
   align-items: center;
@@ -130,13 +113,13 @@ body {
 }
 
 .quiz_box header .title {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 .quiz_box header .timer {
   color: #004085;
-  background: #cce5ff;
+  background: hsl(211, 95%, 75%);
   border: 1px solid #b8daff;
   height: 45px;
   padding: 0 8px;
@@ -241,29 +224,6 @@ section .option_list .option .icon {
   transition: all 0.3s ease;
   line-height: 24px;
 }
-.option_list .option .icon.tick {
-  color: #23903c;
-  border-color: #23903c;
-  background: #d4edda;
-}
-
-.option_list .option .icon.cross {
-  color: #a42834;
-  background: #f8d7da;
-  border-color: #a42834;
-}
-
-.option_list .option.correct {
-  color: #155724;
-  background: #d4edda;
-  border-color: #c3e6cb;
-}
-
-.option_list .option.incorrect {
-  color: #721c24;
-  background: #f8d7da;
-  border-color: #f5c6cb;
-}
 
 footer {
   height: 60px;
@@ -288,27 +248,10 @@ footer .total_que span p:first-child {
   padding-left: 0px;
 }
 
-footer button {
-  height: 40px;
-  padding: 0 13px;
-  font-size: 18px;
-  font-weight: 400;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  color: white;
-  border-radius: 5px;
-  background: #007bff;
-  border: 1px solid #007bff;
-  line-height: 10px;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.95);
-  transition: all 0.3s ease;
-}
+
 
 footer button:hover {
-  background: #0263ca;
+  background: #02ca3b;
 }
 
 footer button.show {
@@ -332,63 +275,6 @@ footer button.show {
   transition: all 0.3s ease;
 }
 
-.result_box .icon {
-  font-size: 100px;
-  color: #007bff;
-  margin-bottom: 10px;
-}
 
-.result_box .complete_text {
-  font-size: 20px;
-  font-weight: 500;
-}
 
-.result_box .score_text span {
-  display: flex;
-  margin: 10px 0;
-  font-size: 18px;
-  font-weight: 500;
-}
 
-.result_box .score_text span p {
-  padding: 0 4px;
-  font-weight: 600;
-}
-
-.result_box .buttons {
-  display: flex;
-  margin: 20px 0;
-}
-
-.result_box .buttons button {
-  margin: 0 10px;
-  height: 45px;
-  padding: 0 20px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #007bff;
-  transition: all 0.3s ease;
-}
-
-.buttons button.restart {
-  color: #fff;
-  background: #007bff;
-}
-
-.buttons button.restart:hover {
-  background: #0263ca;
-}
-
-.buttons button.quit {
-  color: #007bff;
-  background: #fff;
-}
-
-.buttons button.quit:hover {
-  color: #fff;
-  background: #007bff;
-}

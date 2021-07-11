@@ -30,6 +30,7 @@ $(quit_quiz).click(function () {
 // restart quiz
 $(restart_quiz).click(function () {
   $(result_box).removeClass("activeResult");
+  $(quiz_box).addClass("activeQuiz");
   timeValue = 60;
   que_count = 0;
   que_numb = 1;
